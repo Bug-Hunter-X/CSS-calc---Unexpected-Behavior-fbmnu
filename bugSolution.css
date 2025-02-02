@@ -1,0 +1,18 @@
+/* bugSolution.css */
+
+/* Instead of using percentages directly with pixels, consider using explicit values or adjusting the calculation to ensure consistent units. */
+.container {
+  width: 500px; /* Set a fixed width for the container */
+}
+
+.element {
+  width: calc(50% - 10px);
+  /*Ensuring that the calculation is done correctly */
+  background-color: lightblue;
+}
+
+/*Alternative Solution, more explicit*/
+.element2 {
+  width: 240px; /*Calculate 50% of 500px minus 10px*/
+  background-color: lightgreen; 
+} 
